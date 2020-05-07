@@ -4,7 +4,9 @@
 
 
 // start header
-
+.header{
+    background-color: #fff;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -50,10 +52,7 @@
 .menu__list{
     li{
         display: inline-block;
-    
-    & + li {
         margin-left: 30px;
-    }
 }
     a{
         color: #ffffff;
@@ -106,6 +105,7 @@
         }
     }
     .basket{
+        margin-right: 20px;
         span{
             background-color: $green;
         }
@@ -121,7 +121,6 @@
     }
      
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -178,7 +177,8 @@
 }
 .circle__menu{
     position: absolute;
-
+    top: 69px;
+    z-index: 1;
 }
 .message__box,
 .notification__box,
@@ -310,7 +310,10 @@
 .icons-color::before{
     color: $tomate;
 }
-
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
 // end header
 // start search
 
@@ -1192,4 +1195,6 @@ margin-right: 14px;
 }
 // end product__page
 
-  
+ 
+
+@import 'media';
